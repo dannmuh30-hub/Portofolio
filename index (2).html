@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio Muhammad Syahdan - Information Systems Student / Web Developer" />
+  <title>Portfolio | Muhammad Syahdan</title>
+
+  <!-- Google Fonts: Bebas Neue (judul tebal), Poppins (teks), Mrs Saint Delafield (aksen tulisan tangan) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR (sticky) ===================== -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">SYAHDAN<span>.</span></a>
+
+    <nav class="nav-menu" id="navMenu" aria-label="Navigasi utama">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <!-- Tombol ganti tema Dark / Light -->
+      <button class="icon-btn" id="themeToggle" aria-label="Ganti tema">🌙</button>
+      <!-- Hamburger untuk tampilan mobile -->
+      <button class="icon-btn hamburger" id="hamburger" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO / COVER ===================== -->
+    <section class="hero" id="home">
+      <div class="x-pattern" aria-hidden="true">
+        <span>✕ ✕ ✕ ✕ ✕ ✕</span>
+        <span>✕ ✕ ✕ ✕ ✕ ✕</span>
+      </div>
+      <!-- Ornamen dekoratif melayang (hanya hiasan) -->
+      <span class="orn orn-star" aria-hidden="true">✦</span>
+      <span class="orn orn-plus" aria-hidden="true">✚</span>
+      <span class="orn orn-circle" aria-hidden="true"></span>
+      <span class="orn orn-ring" aria-hidden="true"></span>
+      <span class="orn orn-squiggle" aria-hidden="true"></span>
+      <span class="orn orn-dots" aria-hidden="true"></span>
+      <span class="orn orn-sticker" aria-hidden="true">WEB<br />DEV<br />2026</span>
+
+      <p class="greeting" id="greeting">Halo!</p>
+      <h1 class="hero-title">PORTFOLIO</h1>
+      <p class="hero-role">Information Systems Student / Web Developer</p>
+      <div class="year-line" aria-hidden="true">
+        <span>2025</span><i></i><span>2026</span>
+      </div>
+      <p class="hero-desc">Berfokus pada efisiensi bisnis hingga transformasi digital.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+        <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+      </div>
+    </section>
+
+    <!-- ===================== MARQUEE (pita berjalan) ===================== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>WEB DEVELOPER</span><b>✦</b><span>INFORMATION SYSTEMS</span><b>✕</b><span>UNHAS 2025</span><b>✦</b><span>FRONT-END</span><b>✕</b><span>DIGITAL TRANSFORMATION</span><b>✦</b>
+        </div>
+        <!-- Duplikat agar animasi berulang mulus -->
+        <div class="marquee-group">
+          <span>WEB DEVELOPER</span><b>✦</b><span>INFORMATION SYSTEMS</span><b>✕</b><span>UNHAS 2025</span><b>✦</b><span>FRONT-END</span><b>✕</b><span>DIGITAL TRANSFORMATION</span><b>✦</b>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== ABOUT ME ===================== -->
+    <section class="section" id="about">
+      <div class="about-card">
+        <!-- Foto profil dalam bingkai "window" seperti contoh -->
+        <div class="window">
+          <div class="window-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <em>about me</em>
+          </div>
+          <!-- Simpan foto kamu sebagai assets/images/profile.jpg -->
+          <img src="images/profil.jpeg" alt="Foto profil Muhammad Syahdan di puncak Taling"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+          <div class="photo-fallback">
+            <img src="images/profil.jpeg" alt="Foto profil Muhammad Syahdan (fallback)" />
+          </div>
+        </div>
+
+        <div class="about-text">
+          <div class="title-row">
+            <h2 class="big-title">ABOUT ME<br />SYAHDAN</h2>
+            <div class="x-pattern small" aria-hidden="true">
+              <span>✕ ✕ ✕ ✕ ✕ ✕</span>
+              <span>✕ ✕ ✕ ✕ ✕ ✕</span>
+            </div>
+          </div>
+          <p>
+            Halo semuanya, saya <strong>Muhammad Syahdan</strong> (H071251022), mahasiswa Sistem Informasi
+            UNHAS angkatan 2025. Sebagai mahasiswa semester 3 yang dinamis, perjalanan studi saya
+            didorong oleh antusiasme besar untuk memahami bagaimana teknologi dapat menyelesaikan masalah nyata.
+          </p>
+          <p>
+            Ketertarikan ini mengarahkan saya untuk fokus pada bidang <strong>Web Development</strong> dan
+            <strong>Software Engineering</strong>. Saat ini, saya aktif mengasah kemampuan front-end
+            menggunakan HTML, CSS, dan JavaScript untuk membangun antarmuka web yang interaktif,
+            responsif, dan ramah pengguna.
+          </p>
+          <h3 class="contact-mini">Contact me</h3>
+          <div class="contact-line">
+            <a href="mailto:syahdanans30@gmail.com">✉ syahdanans30@gmail.com</a>
+            <a href="https://www.instagram.com/syahdannmuh.30" target="_blank" rel="noopener">◎ @syahdannmuh.30</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section" id="skills">
+      <div class="section-head">
+        <span class="script">my</span>
+        <h2 class="big-title">SKILLS</h2>
+      </div>
+
+      <div class="skills-grid">
+        <article class="card">
+          <h3>Languages &amp; Web</h3>
+          <ul class="chips">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>Java</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Tools &amp; Platforms</h3>
+          <ul class="chips">
+            <li>Git</li><li>GitHub</li><li>VS Code</li><li>Figma</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section" id="projects">
+      <div class="section-head">
+        <span class="script">my</span>
+        <h2 class="big-title">PROJECTS</h2>
+      </div>
+
+      <!-- Filter kategori proyek -->
+      <div class="filters" role="group" aria-label="Filter proyek">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="java">Java</button>
+        <button class="filter-btn" data-filter="other">Lainnya</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Proyek 1 -->
+        <article class="project-card" data-category="python"
+                 data-title="Sahabat Sehat"
+                 data-desc="Aplikasi kesehatan pintar yang menemani perjalanan hidup sehat Anda kapan saja dan di mana saja."
+                 data-tech="Python"
+                 data-link="https://github.com/dannmuh30-hub">
+                 
+          <img src="images/Sahabat-Sehat.jpeg" alt="Tampilan aplikasi Sahabat Sehat" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+          <h3>Sahabat Sehat</h3>
+          <p>Aplikasi kesehatan pintar yang menemani perjalanan hidup sehat Anda.</p>
+          <span class="tag">Python</span>
+          <button class="btn-link">Detail →</button>
+        </article>
+
+        <!-- Proyek 2 -->
+        <article class="project-card" data-category="java"
+                 data-title="Task Flow"
+                 data-desc="Diagram atau visualisasi yang menggambarkan langkah-langkah berurutan yang harus dilakukan oleh pengguna untuk menyelesaikan satu tugas spesifik."
+                 data-tech="Java"
+                 data-link="https://github.com/dannmuh30-hub">
+          <img src="images/Task-Flow.png" alt="">
+          <h3>Task Flow</h3>
+          <p>Visualisasi langkah berurutan untuk menyelesaikan satu tugas spesifik.</p>
+          <span class="tag">Java</span>
+          <button class="btn-link">Detail →</button>
+        </article>
+
+        <!-- Proyek 3 -->
+        <article class="project-card" data-category="other"
+                 data-title="Dann Adventure"
+                 data-desc="Menyewakan alat outdoor dan mendaki gunung (nanjak)."
+                 data-tech="Web (HTML, CSS, JavaScript)"
+                 data-link="https://github.com/dannmuh30-hub">
+          <img src="images/Dann-Adventure.png" alt="">
+          <h3>Dann Adventure</h3>
+          <p>Penyewaan alat outdoor dan mendaki gunung (nanjak).</p>
+          <span class="tag">Web</span>
+          <button class="btn-link">Detail →</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section" id="contact">
+      <div class="section-head">
+        <span class="script">get in</span>
+        <h2 class="big-title">TOUCH</h2>
+      </div>
+
+      <div class="contact-wrap">
+        <form id="contactForm" class="card form" novalidate>
+          <label for="name">Nama</label>
+          <input type="text" id="name" name="name" placeholder="Nama lengkap" />
+          <small class="error" id="nameError"></small>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="nama@email.com" />
+          <small class="error" id="emailError"></small>
+
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tulis pesanmu (min. 10 karakter)"></textarea>
+          <small class="error" id="messageError"></small>
+
+          <button type="submit" class="btn btn-primary">Kirim</button>
+          <p class="success" id="formSuccess" role="status"></p>
+        </form>
+
+        <div class="card links">
+          <h3>Temukan saya di</h3>
+          <a href="mailto:syahdanans30@gmail.com">✉ Email: syahdanans30@gmail.com</a>
+          <a href="https://github.com/dannmuh30-hub" target="_blank" rel="noopener">⌥ GitHub: dannmuh30-hub</a>
+          <a href="https://www.instagram.com/syahdannmuh.30" target="_blank" rel="noopener">◎ Instagram: syahdannmuh.30</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <h2 class="thanks">THANK YOU</h2>
+    <p>Copyright &copy; 2026 Muhammad Syahdan. All rights reserved.</p>
+  </footer>
+
+  <!-- Tombol kembali ke atas -->
+  <button id="backToTop" class="back-top" aria-label="Kembali ke atas">↑</button>
+
+  <!-- ===================== MODAL DETAIL PROYEK ===================== -->
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Tutup">✕</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <p><strong>Tech Stack:</strong> <span id="modalTech"></span></p>
+      <a id="modalLink" class="btn btn-primary" target="_blank" rel="noopener">Lihat di GitHub</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
